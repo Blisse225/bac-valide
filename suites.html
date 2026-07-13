@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Suites numériques - Bac validé</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>📘 Suites numériques</h1>
+    <p>Bienvenue dans le cours de Mathématiques.</p>
+</header>
+
+<section class="cours">
+    <h2>Définition</h2>
+
+    <p>
+        Une suite numérique est une liste de nombres rangés dans un ordre précis.
+        Chaque nombre est appelé un <strong>terme</strong> de la suite.
+    </p>
+
+    <h2>Exemple</h2>
+
+    <p>
+        2 ; 4 ; 6 ; 8 ; 10...
+    </p>
+
+    <p>
+        Cette suite augmente de 2 à chaque terme.
+    </p>
+
+    <h2>Exercice</h2>
+
+    <p>
+        Compléter la suite suivante :
+        <br><br>
+        5 ; 8 ; 11 ; 14 ; .... ; ....
+    </p>
+
+    <button onclick="afficherCorrection()">Voir la correction</button>
+
+<p id="correction" style="display:none;">
+    Correction :<br>
+    5 ; 8 ; 11 ; 14 ; 17 ; 20
+</p>
+
+    <br><br>
+<h2>Exercice 2</h2>
+
+<p>
+Soit la suite arithmétique de premier terme U₀ = 3 et de raison r = 5.
+<br>
+Calculer U₁, U₂ et U₃.
+</p>
+
+<button onclick="afficherCorrection2()">Voir la correction</button>
+
+<p id="correction2" style="display:none;">
+Correction :<br>
+U₁ = 8<br>
+U₂ = 13<br>
+U₃ = 18
+</p>
+    <a href="maths.html">
+        <button>⬅ Retour aux Mathématiques</button>
+    </a>
+function afficherCorrection2() {
+    document.getElementById("correction2").style.display = "block";
+}<h2>Formules importantes</h2>
+
+<p>
+<strong>Suite arithmétique :</strong><br>
+U(n+1) = U(n) + r<br>
+U(n) = U(0) + n × r
+</p>
+
+<p>
+<strong>Suite géométrique :</strong><br>
+U(n+1) = q × U(n)<br>
+U(n) = U(0) × qⁿ
+</p>
+</section>
+<script>
+function afficherCorrection() {
+    document.getElementById("correction").style.display = "block";
+}
+</script>
+</body>
+</html>
