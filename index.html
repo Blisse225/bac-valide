@@ -118,6 +118,7 @@ footer h3 {
     <p>© 2026 - Tous droits réservés</p>
 </footer>
 <body>
+
 <header>
     <h1>😎🙏 UN COUP KO BAC D 👊✅</h1>
     <p>La plateforme de réussite des élèves ivoiriens 🇨🇮</p>
@@ -131,8 +132,9 @@ footer h3 {
 </nav>
 
 <header>
+<input id="recherche" class="recherche" type="text" placeholder="Rechercher un cours...">
+
     <h1UN😎🙏UN COUP KO BAC D 👊✅>
-<input class="recherche" type="text" placeholder="Rechercher un cours...">
 
 <datalist id="cours">
     <option value="Mathématiques">
@@ -297,13 +299,18 @@ function rechercher() {
     let recherche = document.getElementById("recherche").value.toLowerCase();
 
     let pages = {
-        "math": "maths.html",
-        "physique": "physique.html",
-        "chimie": "chimie.html",
-        "français": "français.html",
-        "statistiques": "statistiques.html",
-        "suite": "suite.html"
-    };
+    "math": "maths.html",
+    "physique": "physique.html",
+    "chimie": "chimie.html",
+    "français": "français.html",
+    "statistiques": "statistiques.html",
+    "suite": "suite.html",
+    "svt": "svt.html",
+    "philo": "philo.html",
+    "hg": "hg.html",
+    "dissertation": "dissertation.html",
+    "lecture": "lecture.html"
+};
 
     for (let cours in pages) {
         if (cours.includes(recherche)) {
@@ -312,6 +319,11 @@ function rechercher() {
         }
     }
 }
+document.getElementById("recherche").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        rechercher();
+    }
+});
 </script>
 <div class="cartes">
 
