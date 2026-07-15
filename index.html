@@ -1,15 +1,127 @@
 <<!DOCTYPE html>
 <html lang="fr">
+<style>
+.cartes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
 
+.carte {
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    text-align: center;
+    background: white;
+}
+
+.carte h2 {
+    margin-bottom: 10px;
+}
+
+.carte a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #009e49;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.carte a:hover {
+    background: #ff8200;
+}
+</style>
+<style>
+.matieres {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.carte {
+    width: 220px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, #ff8200, white, #009e49);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.carte h3 {
+    margin-bottom: 15px;
+}
+
+.carte a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.carte a:hover {
+    background: #0056b3;
+}
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: linear-gradient(to right, orange, white, green);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+header h1 {
+    color: black;
+}
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to right, #ff8200, white, #009e49);
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+.recherche {
+    width: 80%;
+    max-width: 500px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    border: 2px solid #009e49;
+    display: block;
+    margin: 20px auto;
+}
+</style>
 <head>
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>😎🙏UN COUP KO BAC D 👊✅</title>
 </head>
-😎🙏UN COUP KO BAC D 👊✅
+<footer>
+    <h3>🇨🇮 UN COUP KO BAC D 👊✅</h3>
+    <p>La réussite scolaire à portée de main</p>
+    <p>© 2026 - Tous droits réservés</p>
+</footer>
 <body>
-
+<header>
+    <h1>😎🙏 UN COUP KO BAC D 👊✅</h1>
+    <p>La plateforme de réussite des élèves ivoiriens 🇨🇮</p>
+</header>
 <nav>
     <a href="#">Accueil</a>
     <a href="#formation">Formations</a>
@@ -20,16 +132,112 @@
 
 <header>
     <h1UN😎🙏UN COUP KO BAC D 👊✅>
+<input class="recherche" type="text" placeholder="Rechercher un cours...">
+
+<datalist id="cours">
+    <option value="Mathématiques">
+    <option value="Physique">
+    <option value="Chimie">
+    <option value="Français">
+    <option value="Statistiques">
+    <option value="Suites">
+    <option value="Fonctions">
+    <option value="Circuit RLC">
+    <option value="Mécanique">
+    <option value="Dissertation">
+    <option value="Commentaires">
+    <option value="Lecture">
+</datalist>
     <p>Votre plateforme pour apprendre, progresser et réussir.</p>
 <img src="image/photo.jpg" alt="Arouna" width="300">
 </header>
 
 <section class="accueil">
-    <h2>Bienvenue sur 😎🙏UN COUP KO BAC D 👊✅</h2>
-    <p>
-        Retrouvez des cours, exercices et méthodes pour préparer vos examens
-        dans plusieurs matières.
-    </p>
+ <h1>😎🙏 UN COUP KO BAC D 👊✅</h1>
+
+<h2>Bienvenue sur votre plateforme de réussite scolaire 🚀</h2>
+<p>
+    Retrouvez des cours, exercices corrigés et méthodes efficaces
+    pour préparer votre BAC D dans plusieurs matières :
+    Mathématiques, Physique, Chimie, SVT, Français, Philosophie,
+    Histoire-Géographie et Anglais.
+</p>
+<div class="matieres">
+
+    <div class="carte">
+        <h3>📘 Mathématiques</h3>
+        <a href="maths.html">Voir les cours</a>
+    </div>
+
+    <div class="carte">
+        <h3>⚡ Physique</h3>
+        <a href="physique.html">Voir les cours</a>
+    </div>
+
+    <div class="carte">
+        <h3>🧪 Chimie</h3>
+        <a href="chimie.html">Voir les cours</a>
+    </div>
+
+    <div class="carte">
+        <h3>🌱 SVT</h3>
+        <a href="svt.html">Voir les cours</a>
+    </div>
+
+    <div class="carte">
+        <h3>📖 Français</h3>
+        <a href="francais.html">Voir les cours</a>
+    </div>
+
+    <div class="carte">
+        <h3>💭 Philosophie</h3>
+        <a href="philo.html">Voir les cours</a>
+    </div>
+
+    <div class="carte">
+        <h3>🌍 Histoire-Géographie</h3>
+        <a href="hg.html">Voir les cours</a>
+    </div>
+
+</div>
+<div class="matieres">
+
+    <div class="carte">
+        <h3>📘 Mathématiques</h3>
+        <a href="maths.html">Voir les cours</a>
+    </div>
+
+    <div class="carte">
+        <h3>⚡ Physique</h3>
+        <a href="physique.html">Voir les cours</a>
+    </div>
+
+    <div class="carte">
+        <h3>🧪 Chimie</h3>
+        <a href="chimie.html">Voir les cours</a>
+    </div>
+
+    <div class="carte">
+        <h3>🌱 SVT</h3>
+        <a href="svt.html">Voir les cours</a>
+    </div>
+
+    <div class="carte">
+        <h3>📖 Français</h3>
+        <a href="francais.html">Voir les cours</a>
+    </div>
+
+    <div class="carte">
+        <h3>💭 Philosophie</h3>
+        <a href="philo.html">Voir les cours</a>
+    </div>
+
+    <div class="carte">
+        <h3>🌍 Histoire-Géographie</h3>
+        <a href="hg.html">Voir les cours</a>
+    </div>
+
+</div>
 </section>
 
 
@@ -84,6 +292,53 @@
 </main>
 
 <script src="script.js"></script>
+<script>
+function rechercher() {
+    let recherche = document.getElementById("recherche").value.toLowerCase();
 
+    let pages = {
+        "math": "maths.html",
+        "physique": "physique.html",
+        "chimie": "chimie.html",
+        "français": "français.html",
+        "statistiques": "statistiques.html",
+        "suite": "suite.html"
+    };
+
+    for (let cours in pages) {
+        if (cours.includes(recherche)) {
+            window.location.href = pages[cours];
+            break;
+        }
+    }
+}
+</script>
+<div class="cartes">
+
+    <div class="carte">
+        <h2>📐 Mathématiques</h2>
+        <p>Cours, exercices et sujets de mathématiques.</p>
+        <a href="maths.html">Accéder au cours</a>
+    </div>
+
+    <div class="carte">
+        <h2>⚡ Physique</h2>
+        <p>Cours et exercices de physique.</p>
+        <a href="physique.html">Accéder au cours</a>
+    </div>
+
+    <div class="carte">
+        <h2>🧪 Chimie</h2>
+        <p>Cours et exercices de chimie.</p>
+        <a href="chimie.html">Accéder au cours</a>
+    </div>
+
+    <div class="carte">
+        <h2>📖 Français</h2>
+        <p>Commentaires, dissertations et lectures.</p>
+        <a href="français.html">Accéder au cours</a>
+    </div>
+
+</div>
 </body>
 </html>
