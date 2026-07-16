@@ -2,48 +2,94 @@
 <html>
 <head>
     <title>Cours PDF - UN COUP KO BAC D</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f2f2;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #006400;
+        }
+
+        .conteneur {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .carte {
+            background: white;
+            width: 280px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+
+        .carte h2 {
+            color: #333;
+        }
+
+        .bouton {
+            display: inline-block;
+            background: #008000;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .bouton:hover {
+            background: #005500;
+        }
+    </style>
 </head>
 
 <body>
 
 <h1>📚 Tous les cours PDF</h1>
 
-<ul>
-    <li>
-<a href="histoire.pdf" download onclick="return confirm('Voulez-vous télécharger ce fichier ?');">
-📖 Télécharger le cours d'Histoire
-</a>
-</li>
+<div class="conteneur">
 
-<li>
-<a href="philosophie.pdf" download onclick="return confirm('Voulez-vous télécharger ce fichier ?');">
-📘 Télécharger le cours de Philosophie
-</a>
-</li>
+    <div class="carte">
+        <h2>📖 Histoire</h2>
+        <p>Cours complet d'Histoire</p>
+        <a class="bouton" href="histoire.pdf" download>
+            Télécharger
+        </a>
+    </div>
 
-<li>
-<a href="le réflexe conditionnel.pdf" download onclick="return confirm('Voulez-vous télécharger ce fichier ?');">
-📘 Télécharger Le réflexe conditionnel
-</a>
-</li>
+    <div class="carte">
+        <h2>📘 Philosophie</h2>
+        <p>Cours de Philosophie</p>
+        <a class="bouton" href="philosophie.pdf" download>
+            Télécharger
+        </a>
+    </div>
 
-<li>
-<a href="Résumé de cours maths.pdf" download onclick="return confirm('Voulez-vous télécharger ce fichier ?');">
-📐 Télécharger Résumé de cours maths
-</a>
-</li>
+    <div class="carte">
+        <h2>📐 Mathématiques</h2>
+        <p>Résumé de cours maths</p>
+        <a class="bouton" href="Résumé de cours maths.pdf" download>
+            Télécharger
+        </a>
+    </div>
 
-<li>
-<a href="resume de chimie organique.pdf" download onclick="return confirm('Voulez-vous télécharger ce fichier ?');">
-⚗️ Télécharger Résumé de chimie organique
-</a>
-</li>
+    <div class="carte">
+        <h2>⚗️ Chimie</h2>
+        <p>Résumé de chimie organique</p>
+        <a class="bouton" href="resume de chimie organique.pdf" download>
+            Télécharger
+        </a>
+    </div>
 
-<li>
-<a href="Une si Longue Lettre Mariama Ba.pdf" download onclick="return confirm('Voulez-vous télécharger ce fichier ?');">
-📖 Télécharger Une si Longue Lettre - Mariama Bâ
-</a>
-</li>
+</div>
 
 </body>
 </html>
